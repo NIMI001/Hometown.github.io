@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background:#cfcecd;
+    margin:0px;
+    padding: 0px;
+    font-family:"MedievalSharp", cursive;
+    
+}
+header{
+    /* position: fixed; */
+    width: 100%;
+    
+}
+header nav{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background:#101404;
+    padding: 7px 9px;
+    width: 100%;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-list a{
+    text-decoration: none;
+    font-size: 18px;
+    color:#6d7b2d;
+    margin:4px 10px;
+}
+.nav-list a:hover{
+    color:white;
+}
+#logo{
+margin: 2px 5px;
+}
+ header #hero{
+    
+    height: 500px;
+    background-image: url("Images/idanre-hill.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10px 0px;
+    color: white;
+    
+}
+.about {
+    background: #919754;
+    height: 500px;
+    width: 100%;
+    color:#4a556d;
+    padding:10px 7px;
+    border-top: 6px solid #4a556d;
+}
+.about-flex{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 6px 0px;
+    padding:4px 8px;
+}
+.about-card{
+    height:360px;
+    width:325px;
+    background: white;
+    border-radius: 15px;
+    color:#4a556d;
+    padding: 4px 9px;
+    
+}
+
+.attraction{
+    background:#4a556d ;
+    color:#919754;
+    height:400px;
+    width:100%;
+    padding:10px 7px;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+}
+.attraction-flex{
+    display:flex;
+    justify-content: space evenly;
+    margin: 6px 0px;
+    padding:4px 8px;
+    
+}
+.attraction-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height:300px;
+    width:300px;
+    padding:5px 7px;
+    margin: 5px auto;
+}
+.attraction-img{
+    height:250px;
+    width:250px;
+    border-radius: 50%;
+}
+
+.guide{
+    background: #919754;
+    height: 400px;
+    width: 100%;
+    color:#4a556d;
+    padding:10px 7px;
+    
+}
+.tour-card{
+    width:450px;
+    height:250px;
+    background:conic-gradient(from 25deg,#919754,white,#4a556d);
+    border-radius: 15px;
+    margin:0px auto;
+    margin-top:15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 7px;
+    color:#6d7b2d;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin: 0px 5px;
+    padding:4px 4px;
+}
+#profile-pics{
+    border-radius: 20px;
+    width:130px;
+    height:150px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: right;
+    margin:0px 3px;
+    padding: 4px 2px;
+}
+.guide-list{
+    display: flex;
+    list-style: none;
+   
+}
+.guide-p{
+    font-size: 12px;
+    color: whitesmoke;
+    text-shadow: 0px 0px 4px #4a556d;
+    margin: 30px 0px;
+    margin-left: 35px;
+   
+   
+}
+.guide-a{
+    text-decoration: none;
+    font-size: 16px;
+    color:white;
+    text-shadow: 0px 0px 2px #4a556d;
+    
+    
+}
+.guide-li{
+    margin: 0px 5px;
+}
+i{
+    color:#4a556d;
+    margin:0px 4px;
+}
+h2,.guide-h2,h5{
+    text-align: center;
+    
+    
+}
+h5{
+    font-size: 18px;
+    
+}
+  
+span{
+    background: #e2e2e3;
+    padding: 5px 10px;
+    border-radius: 10px;
+    
+    
+}
+
+h1,  h3{
+    text-shadow: 0px 0px 6px #6d7b2d;
+    font-size: 45px;
+}
+h3{
+    font-size: 25px;
+}
+h4{
+    color:white
+}
+footer{
+    height:70px;
+    background: #101404 ;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 15px;
+    border-top: 6px solid #4a556d;
+}
+
+/* mobile responsiveness */
+@media (max-width: 600px) {
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    #hero {
+        height: 300px;
+    }
+    .about-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .attraction-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-card, .attraction-card {
+        width: 80%;
+        height: 250;
+        margin: 10px 0;
+    }
+    .about, .attraction{
+        height:1250px;
+    }
+    .tour-card {
+        width: 100%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
